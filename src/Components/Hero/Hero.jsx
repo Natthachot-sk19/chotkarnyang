@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -9,8 +10,12 @@ function Hero() {
       <div className="md:w-[1400px] md:h-[500px] grid md:grid-cols-2 ">
         <div className="col-span-1 ">
           <div className="flex md:justify-normal justify-center">
-            <h1 className="md:text-[68px] text-[42px] font-bold">โชติการยาง </h1>
-            <div className=" md:text-[68px] text-[42px] font-bold ">ท่าวุ้ง</div>
+            <h1 className="md:text-[68px] text-[42px] font-bold">
+              โชติการยาง{" "}
+            </h1>
+            <div className=" md:text-[68px] text-[42px] font-bold ">
+              ท่าวุ้ง
+            </div>
           </div>
 
           <h1 className="font-bold text-center md:text-start md:text-[32px] text-[24px] text-red-500 underline">
@@ -44,20 +49,23 @@ function Hero() {
             </ul>
           </div>
           <div className="mt-10 flex flex-col items-center">
-            <h1 className="font-bold md:text-[24px]">เวลาทำการ 08:30 - 18:00</h1>
+            <h1 className="font-bold md:text-[24px]">
+              เวลาทำการ 08:30 - 18:00
+            </h1>
             <h1 className="font-bold md:text-[24px]">เปิดบริการทุกวัน</h1>
           </div>
           <div className="flex justify-center sm:mt-20">
-            <a href="service">
+            <Link to={"/service"}>
               <button className="bg-blue-500 py-2 px-5 rounded-lg font-bold md:text-[20px] text-white">
                 บริการของเรา
               </button>
-            </a>
-            <a href="contact">
+            </Link>
+
+            <Link to={"/contact"}>
               <button className="bg-green-600 py-2 px-5 rounded-lg font-bold md:text-[20px] text-white ml-5">
                 ค้นหาสถานที่
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-span-1 ">
