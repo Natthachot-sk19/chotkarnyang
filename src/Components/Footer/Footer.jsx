@@ -1,30 +1,38 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
+  
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="w-full md:h-[350px] bg-[#1e1f25] flex justify-center">
       <div className="sm:w-[1400px]  grid sm:grid-cols-4 mt-10">
         <div className="col-span-1 mt-10">
           <ul className="flex flex-col items-center md:items-start gap-5">
             <li>
-              <a href="/" className="text-white hover:text-amber-300">
+              <Link to={"/"} className="text-white hover:text-amber-300" onClick={scrollToTop}>
                 หน้าแรก
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="product" className="text-white hover:text-amber-300">
+              <Link to={"/product"} className="text-white hover:text-amber-300" onClick={scrollToTop}>
                 สินค้า
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="service" className="text-white hover:text-amber-300">
+              <Link to={"/service"} className="text-white hover:text-amber-300" onClick={scrollToTop}>
                 บริการ
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="contact" className="text-white hover:text-amber-300">
+              <Link to={"/contact"} className="text-white hover:text-amber-300" onClick={scrollToTop}>
                 ติดต่อเรา
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
