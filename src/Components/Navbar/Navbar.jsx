@@ -13,8 +13,13 @@ function Navbar() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
+  };
+
+  const handleLinkClick = () => {
+    toggleMobileMenu();
+    scrollToTop();
   };
 
   return (
@@ -31,27 +36,31 @@ function Navbar() {
         </div>
 
         <div className="hidden md:flex text-yellow-400 gap-5">
-          <Link to={"/"} className="text-[24px] hover:text-white font-semibold" onClick={scrollToTop}>
+          <Link
+            to={"/"}
+            className="text-[24px] hover:text-white font-semibold"
+            onClick={handleLinkClick}
+          >
             หน้าหลัก
           </Link>
           <Link
             to={"/product"}
             className="text-[24px] hover:text-white font-semibold"
-            onClick={scrollToTop}
+            onClick={handleLinkClick}
           >
             สินค้า
           </Link>
           <Link
             to={"/service"}
             className="text-[24px] hover:text-white font-semibold"
-            onClick={scrollToTop}
+            onClick={handleLinkClick}
           >
             บริการของเรา
           </Link>
           <Link
             to={"/contact"}
             className="text-[24px] hover:text-white font-semibold"
-            onClick={scrollToTop}
+            onClick={handleLinkClick}
           >
             ต่อต่อเรา
           </Link>
@@ -85,34 +94,34 @@ function Navbar() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden flex flex-col items-center bg-[#1e1f25] text-yellow-400">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="py-2 text-[24px] hover:text-white font-semibold"
-            onClick={toggleMobileMenu}
+            onClick={handleLinkClick}
           >
             หน้าแรก
-          </a>
-          <a
-            href="product"
+          </Link>
+          <Link
+            to="/product"
             className="py-2 text-[24px] hover:text-white font-semibold"
-            onClick={toggleMobileMenu}
+            onClick={handleLinkClick}
           >
             สินค้า
-          </a>
-          <a
-            href="service"
+          </Link>
+          <Link
+            to="/service"
             className="py-2 text-[24px] hover:text-white font-semibold"
-            onClick={toggleMobileMenu}
+            onClick={handleLinkClick}
           >
             บริการของเรา
-          </a>
-          <a
-            href="contact"
+          </Link>
+          <Link
+            to={"/contact"}
             className="py-2 text-[24px] hover:text-white font-semibold"
-            onClick={toggleMobileMenu}
+            onClick={handleLinkClick}
           >
             ติดต่อเรา
-          </a>
+          </Link>
           <div className="flex flex-col items-center bg-white px-5 py-2 rounded-md mt-4 mb-2">
             <div className="bg-black rounded-full flex justify-center items-center p-2">
               <FontAwesomeIcon

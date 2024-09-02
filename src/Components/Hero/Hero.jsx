@@ -5,6 +5,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function Hero() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="w-full md:h-[850px] h-auto  flex justify-center items-center md:mb-0">
       <div className="md:w-[1400px] md:h-[500px] grid md:grid-cols-2 ">
@@ -55,13 +61,13 @@ function Hero() {
             <h1 className="font-bold md:text-[24px]">เปิดบริการทุกวัน</h1>
           </div>
           <div className="flex justify-center sm:mt-20">
-            <Link to={"/service"}>
+            <Link to={"/service"} onClick={scrollToTop}>
               <button className="bg-blue-500 py-2 px-5 rounded-lg font-bold md:text-[20px] text-white">
                 บริการของเรา
               </button>
             </Link>
 
-            <Link to={"/contact"}>
+            <Link to={"/contact"} onClick={scrollToTop}>
               <button className="bg-green-600 py-2 px-5 rounded-lg font-bold md:text-[20px] text-white ml-5">
                 ค้นหาสถานที่
               </button>
