@@ -1,8 +1,7 @@
-import { useState } from "react";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
-import Hero from "./Components/Hero/Hero";
 
 import Footer from "./Components/Footer/Footer";
 import Service from "./Page/Service/Service";
@@ -12,6 +11,7 @@ import Product from "./Page/Product/Product";
 import Contactpage from "./Page/Contactpage/Contactpage";
 import UnderFooter from "./Components/Footer/UnderFooter";
 import ScrollToTopButton from "./Components/Scroll/ScrollToTopButton";
+import Social from "./Components/Social/Social";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
           <Route path="/contact" element={<Contactpage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-
+        <Social />
         <Footer />
         <UnderFooter/>
         <ScrollToTopButton />

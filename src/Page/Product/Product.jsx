@@ -1,4 +1,4 @@
-import React from "react";
+
 import { TireData } from "../../Data/data";
 import { MaxData } from "../../Data/data";
 function Product() {
@@ -10,8 +10,8 @@ function Product() {
 
       <div className="grid md:grid-cols-4 justify-center md:justify-center items-center gap-5 p-5 px-20">
         {TireData.map((data, index) => (
-          <div className="w-[350px] h-[450px] bg-white  shadow-xl col-span-1 flex flex-col justify-center items-center">
-            <div className="w-auto h-[250px]">
+          <div className="w-[350px] h-[450px] bg-white  shadow-xl col-span-1 flex flex-col justify-center items-center" key={index}>
+            <div className="w-auto h-[250px]" >
               <img src={data.image} alt="" className="w-full h-full" />
             </div>
             <p className="font-semibold text-[24px] text-red-600 flex justify-center items-center mt-5">
@@ -33,7 +33,7 @@ function Product() {
         </div>
         <div className="grid md:grid-cols-4 justify-center sm:justify-normal items-center gap-5 p-5">
           {MaxData.map((data, index) => (
-            <div className="w-[350px] h-[450px] bg-white  shadow-xl col-span-1 flex flex-col justify-center items-center">
+            <div className="w-[350px] h-[450px] bg-white  shadow-xl col-span-1 flex flex-col justify-center items-center" key={index}>
               <div className="w-auto h-[250px]">
                 <img src={data.image} alt="" className="w-full h-full" />
               </div>

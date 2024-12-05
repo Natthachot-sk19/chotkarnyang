@@ -1,10 +1,10 @@
-import React from "react";
+
 
 function Contactform() {
   return (
     <div className="w-full md:h-[450px] flex justify-center items-center mt-20 md:mt-0">
       <div className="md:w-[1200px] md:h-[450px] h-[350px] bg-[#2e2d2d] rounded-sm flex justify-center item">
-        <div className="md:w-[650px] w-[350px] px-5 ">
+        <div className="md:w-[650px] w-[350px] px-5 font-bold">
           <div className="flex justify-center items-center mt-5">
             <h1 className="text-white font-bold text-[24px]">Contact Us</h1>
           </div>

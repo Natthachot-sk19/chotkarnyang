@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+
 
 function Hero() {
   const scrollToTop = () => {
@@ -50,7 +49,7 @@ function Hero() {
             adipisci? Vitae, tempora similique!
           </p>
           <div>
-            <ul>
+            <ul className="pl-3">
               <li>ประสบการณ์ทำงานมากกว่า 10 ปี</li>
             </ul>
           </div>

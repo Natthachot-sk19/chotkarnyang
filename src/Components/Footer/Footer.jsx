@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -13,7 +13,7 @@ function Footer() {
     <div className="w-full md:h-[350px] bg-[#1e1f25] flex justify-center">
       <div className="sm:w-[1400px]  grid sm:grid-cols-4 mt-10">
         <div className="col-span-1 mt-10">
-          <ul className="flex flex-col items-center md:items-start gap-5">
+          <ul className="flex flex-col items-center md:items-start gap-5 font-bold">
             <li>
               <Link to={"/"} className="text-white hover:text-amber-300" onClick={scrollToTop}>
                 หน้าแรก
@@ -42,7 +42,7 @@ function Footer() {
             <img src="./img/logo.png" alt="" className="size-[150px]" />
           </a>
 
-          <p className="text-white">
+          <p className="text-white font-bold">
             สินค้าหลากหลายยี่ห้อให้เลือก ครอบคลุมทุกการใช้งาน ราคาถูก บริการดี
           </p>
         </div>
@@ -51,16 +51,16 @@ function Footer() {
           <h1 className="bg-white w-[120px] py-2 flex justify-center font-bold">
             ติดต่อเรา
           </h1>
-          <p className="text-white mt-5">
+          <p className="text-white mt-5 font-bold">
             355 หมู่ 1 ต.ท่าวุ้ง อ.ท่าวุ้ง จ.ลพบุรี 15150
           </p>
 
-          <p className="text-white">ก่อนถึงปั้มบางจาก</p>
-          <div className="flex flex-col mt-3">
+          <p className="text-white font-bold">ก่อนถึงปั้มบางจาก</p>
+          <div className="flex flex-col mt-3 font-bold">
             <h1 className="text-red-500 text-[18px]">089-905-6482</h1>
             <h1 className="text-red-500 text-[18px]">097-095-2690</h1>
           </div>
-          <h1 className=" text-white text-[20px] mt-2">
+          <h1 className=" text-white text-[20px] mt-2 font-bold">
             เปิดบริการทุกวัน 08:30 - 18:00
           </h1>
         </div>

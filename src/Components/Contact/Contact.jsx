@@ -1,10 +1,9 @@
-import React from "react";
+
 import Map from "../Map/Map";
 import Contactform from "./Contactform";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faLocation,
   faLocationDot,
   faPhone,
   faEnvelope,
@@ -28,7 +27,7 @@ function Contact() {
                   className="text-blue-600 text-[32px]"
                 />
               </div>
-              <div>
+              <div className="font-bold">
                 <h1>089-905-6482</h1>
                 <h1>097-095-2690</h1>
               </div>
@@ -42,7 +41,7 @@ function Contact() {
                 />
               </div>
               <div>
-                <h1 className="text-center">
+                <h1 className="text-center font-bold">
                   355 หมู่1 ต.ท่าวุ้ง อ.ท่าวุ้ง จ.ลพบุรี 15150 ก่อนถึงปั้มบางจาก
                 </h1>
               </div>
@@ -56,7 +55,7 @@ function Contact() {
                 />
               </div>
               <div>
-                <h1>
+                <h1 className="font-bold">
                   <a href="">chotkarnyang.com</a>
                 </h1>
               </div>
@@ -68,7 +67,7 @@ function Contact() {
                   className="text-blue-600 text-[32px]"
                 />
               </div>
-              <div>
+              <div className="font-bold">
                 <h1>chotkarnyang.cky@gmail.com</h1>
               </div>
             </div>
