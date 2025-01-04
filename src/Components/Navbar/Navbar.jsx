@@ -62,7 +62,7 @@ function Navbar() {
             className="text-[24px] hover:text-white font-semibold"
             onClick={handleLinkClick}
           >
-            ต่อต่อเรา
+            ติดต่อเรา
           </Link>
         </div>
 
