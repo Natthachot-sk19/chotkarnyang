@@ -65,7 +65,7 @@ function Footer() {
           </h1>
         </div>
 
-        <div className="col-span-1 flex flex-col justify-center py-10">
+        <div className="col-span-1 flex xl:flex-col justify-center flex-row py-10">
           
           <img src="./img/qrcode.jpg" alt="" className="md:size-[200px] size-40"/>
         </div>

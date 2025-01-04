@@ -11,7 +11,7 @@ const Social = () => {
       <ul className="h-auto fixed top-[50%] right-4 bg-blue-500 text-white px-4 py-3 rounded-3xl shadow-md z-50 flex flex-col gap-5">
         <li>
           <a
-            href={"//www.facebook.com"}
+            href={"https://www.facebook.com/profile.php?id=61570220064844"}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -22,7 +22,7 @@ const Social = () => {
         </li>
         <li>
           <a
-            href={"//www.tiktok.com"}
+            href={"https://www.tiktok.com/@chotkarnyang"}
             target="_blank"
             rel="noopener noreferrer"
           >
